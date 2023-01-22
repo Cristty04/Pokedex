@@ -1,0 +1,97 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main__figure{
+    width: 50px;
+}
+
+body{
+  width: 100%;
+  height:10vh;
+  position:relative;
+  background-image: url(Pokémon_logo.svg);
+  background-image: url(Pikachu.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+  }
+
+
+
+body {
+    background-color: rgba(171,37,46,255);
+    margin: 0;
+    font-family: rubik;
+    color: white;
+    
+  }
+  .container {
+    padding: 40px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: px;
+    padding-top: 17cm;
+    padding-left: 150px;
+    
+  }
+  .card {
+    list-style: none;
+    padding: 5px;
+    background:linear-gradient(  #3bd8e4, #e43be4);
+    color: rgb(36, 17, 212);
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 25px;
+    
+    
+  }
+  .card-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .card-subtitle {
+    font-weight: bold;
+    color: rgb(233, 10, 10);
+    margin-top: 5px;
+  }
+  .card-image {
+    height: 200px;
+    
+  }
+  #pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+    
+  }
+  .card:hover {
+    animation: bounce 0.5s linear;
+   
+  }
+  
+  .card:hover img {
+    transform: translateY(-90px);
+  }
+
+  @keyframes bounce {
+    20% {
+      transform: translateY(-8px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }
